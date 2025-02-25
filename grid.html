@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: grid;
+            grid-template-areas: 
+            'navbar navbar navbar navbar'
+            'main main main sidebar';
+            
+
+        }
+        .griddemo{
+            background-color: pink;
+            border: solid black;
+            padding:12px 23px;
+            color: white;
+        }
+        .header{
+            grid-area: navbar;
+
+        }
+        .section{
+            grid-area: main;
+        }
+
+        .sidebar{
+            grid-area: sidebar;
+        }
+    </style>
+</head>
+<body>
+    <h1>we are learning grid</h1>
+    <div class="container">
+        <div class="header griddemo"> 
+            home about contact us
+        </div>
+        <div class="section griddemo ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur quis, rerum, natus mollitia recusandae repudiandae laborum, omnis numquam voluptas quae at alias praesentium. Exercitationem similique at dicta, ut a iste?</div>
+        <div class="sidebar griddemo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur quis, rerum, natus mollitia recusandae repudiandae laborum, omnis numquam voluptas quae at alias praesentium. Exercitationem similique at dicta, ut a iste?</div>
+    </div>
+</body>
+</html>

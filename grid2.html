@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            display: grid;
+            height: 100vh;
+            grid-template-rows: 0.2fr 1.2fr 1.8fr 0.8fr;
+            grid-template-areas: 
+            'nav nav nav nav'
+            'sidebar main main main'
+            'sidebar content1 content2 content3'
+            'footer footer footer footer';
+            gap :8px;
+        }
+        nav{
+            grid-area: nav;
+            background-color: aqua;
+            border-radius: 10px;
+        }
+        main{
+            grid-area: main;
+            background-color: rgb(99, 153, 153);
+            border-radius: 10px;
+        }
+        #sidebar{
+            grid-area: sidebar;
+            background-color: rgb(38, 122, 122);
+            border-radius: 10px;
+        }
+        #content1{
+            grid-area: content1;
+            background-color: rgb(38, 93, 93);
+            border-radius: 10px;
+        }
+        #content2{
+            grid-area: content2;
+            background-color: aqua;
+            border-radius: 10px;
+        }
+        #content3{
+            grid-area: content3;
+            background-color: rgb(49, 167, 167);
+            border-radius: 10px;
+        }
+        footer{
+            grid-area: footer;
+            background-color: rgb(2, 23, 23);
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav>navbar</nav>
+        <main>main</main>
+        <div id="sidebar">sidebar</div>
+        <div id="content1">content1</div>
+        <div id="content2">content2</div>
+        <div id="content3">content3</div>
+        <footer>footer</footer>
+    </div>
+</body>
+</html>
