@@ -1,0 +1,75 @@
+*{
+    margin: 10px;
+    background-color: aqua;
+}
+
+/*
+postionaing of html element
+
+position
+
+static
+relative
+absolute
+fixed
+sticky
+
+z index*/
+
+.item{
+    width: 200px;
+    height: 200px;
+    margin: 40px 0 0 40px;
+    background-color: rgb(52, 18, 84);
+   
+    
+}
+
+.item>div{
+    width: 200px;
+    height: 200px;
+    margin: 40px 0 0 0px;
+    background-color: rgb(149, 65, 227);
+    position: relative;
+    right: 30px;
+    bottom: 10px;
+    background: radial-gradient(circle at 20% 109%,#b1b838 0%,rgb(202, 220, 112)4%,rgb(249, 172, 29) 30%,rgb(177, 12, 160)60%,rgb(79, 16, 237)90%);
+}
+
+.item2{
+    width: 200px;
+    height: 200px;
+    margin: 40px 0 0 40px;
+    background-color: rgb(52, 18, 84);
+    
+}
+
+.item2>div{
+    width: 50px;
+    height: 50px;
+    background-color: rgb(215, 25, 25);
+    position: absolute;
+    top: 20px;
+}
+/*
+postion absolute direct 
+it will ignore other html elemnt
+and than position itself with*/
+
+.item3{
+    width: 200px;
+    height: 200px;
+    margin: 40px 0 0 40px;
+    background-color: rgb(10, 44, 106);
+    position: sticky;
+    top: 100px;
+    
+}
+
+.item4{
+    width: 200px;
+    height: 200px;
+    margin: 40px 0 0 40px;
+    background-color: rgb(119, 14, 119);
+    z-index: 200px;
+}

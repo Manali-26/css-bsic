@@ -1,0 +1,25 @@
+*{
+    background-color: rgb(192, 138, 242);
+    
+}
+p{
+    color:orange;
+    letter-spacing: 1.5px;
+    word-spacing: 3px;
+    border: solid 2px;
+    padding: 20px 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    
+}
+.dec{
+   
+    color: black;
+    text-decoration: underline;
+    text-decoration: dashed;
+}
+
+#shadow{
+    text-align: center;
+    text-shadow: 1px 2px 3px black;
+}
